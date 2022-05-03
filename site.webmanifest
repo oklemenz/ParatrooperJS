@@ -1,0 +1,12 @@
+{
+    "name": "Paratrooper",
+    "short_name": "Paratrooper",
+    "description": "An HTML5 port of Paratrooper",
+    "icons": [{
+        "src": "img/touch-icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }],
+    "display": "fullscreen",
+    "orientation": "landscape"
+}

@@ -1,0 +1,91 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+@media (orientation: portrait) {
+    html,
+    body {
+        overflow: hidden;
+    }
+}
+
+body,
+body * {
+    -webkit-touch-callout: none;
+    user-select: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+}
+
+@supports (-webkit-touch-callout: none) {
+    body {
+        margin-top: 0.5px;
+    }
+}
+
+input {
+    user-select: auto;
+    -webkit-user-select: auto;
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+}
+
+.game_container {
+    display: block;
+    touch-action: none;
+    margin: auto;
+    width: 100vw;
+    height: calc(100vh - env(safe-area-inset-bottom, 0px));
+}
+
+#screen {
+    width: 100%;
+    height: 100%;
+}
+
+#canvas::selection,
+#canvas::-moz-selection,
+#canvas::-webkit-selection {
+    background: transparent;
+}
+
+#canvas {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    clear: both;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.text_container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click_to_start {
+    color: white;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.click_to_start .huge {
+    font-size: 1.5em;
+}
